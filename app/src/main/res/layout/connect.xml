@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:ignore="InefficientWeight,UselessParent">
+
+        <LinearLayout
+            android:id="@+id/connectFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <ListView
+                android:id="@+id/connect_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/connect_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/connect"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,NestedWeights" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/advertisementFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnAdvertTime"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/btnAdvertClose"
+                    android:background="@drawable/btn_style_one"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnAdvertClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_style_one"
+                    android:text="@string/advertisement_exit_text"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/advert_img"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

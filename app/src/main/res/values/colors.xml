@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#303F9F</color>
+    <color name="yellow">#ffff40</color>
+    <color name="green">#40ff89</color>
+    <color name="red">#ff4050</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="colorIcon">#ff000000</color>
+    <color name="dialog_out_back">#e5e5e5</color>
+    <color name="dialog_in_back">#FFE5E5E5</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gospell.wildwolf.remoter"
+    android:revisionCode="3"
+    android:versionName="2.1.20170706.1"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/remoter"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+	
+        <activity android:name=".ConnectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gospell.wildwolf.remoter.qr.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <activity android:name=".RemoterActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/MyStyle">
+
+        </activity>
+
+        <activity android:name=".ProgramsActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/MyStyle">
+
+        </activity>
+
+        <activity android:name=".EpgActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/MyStyle"
+            >
+
+        </activity>
+
+        <service android:name=".NetService">
+            <intent-filter>
+                <action android:name="org.wildwolf.service.NET_SERVICE"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

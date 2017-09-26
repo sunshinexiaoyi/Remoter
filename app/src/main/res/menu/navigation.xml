@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_remoter"
+        android:icon="@drawable/ic_remoter_24dp"
+        android:title="@string/remoter" />
+
+    <item
+        android:id="@+id/navigation_programs"
+        android:icon="@drawable/ic_programs_24dp"
+        android:title="@string/programs" />
+
+    <item
+        android:id="@+id/navigation_epg"
+        android:icon="@drawable/ic_epg_24dp"
+        android:title="@string/epg" />
+
+</menu>
